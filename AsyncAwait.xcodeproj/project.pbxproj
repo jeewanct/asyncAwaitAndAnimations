@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB16937D267BCBE0009A3565 /* ExtensionAVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16937C267BCBE0009A3565 /* ExtensionAVFoundation.swift */; };
+		DB16937F267BCC87009A3565 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB16937E267BCC87009A3565 /* music.mp3 */; };
 		DB449BC3267516A20014F328 /* AsyncAwaitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB449BC2267516A20014F328 /* AsyncAwaitApp.swift */; };
 		DB449BC5267516A20014F328 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB449BC4267516A20014F328 /* ContentView.swift */; };
 		DB449BC7267516A40014F328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB449BC6267516A40014F328 /* Assets.xcassets */; };
 		DB449BCA267516A40014F328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB449BC9267516A40014F328 /* Preview Assets.xcassets */; };
+		DB449BD1267516B60014F328 /* AsynAwaitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB449BD0267516B60014F328 /* AsynAwaitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB16937C267BCBE0009A3565 /* ExtensionAVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAVFoundation.swift; sourceTree = "<group>"; };
+		DB16937E267BCC87009A3565 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		DB1C0F4E267E9AA4008090D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DB449BBF267516A20014F328 /* AsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAwait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB449BC2267516A20014F328 /* AsyncAwaitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitApp.swift; sourceTree = "<group>"; };
 		DB449BC4267516A20014F328 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB449BC6267516A40014F328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB449BC9267516A40014F328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB449BD0267516B60014F328 /* AsynAwaitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynAwaitTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +58,14 @@
 		DB449BC1267516A20014F328 /* AsyncAwait */ = {
 			isa = PBXGroup;
 			children = (
+				DB1C0F4E267E9AA4008090D6 /* Info.plist */,
 				DB449BC2267516A20014F328 /* AsyncAwaitApp.swift */,
 				DB449BC4267516A20014F328 /* ContentView.swift */,
 				DB449BC6267516A40014F328 /* Assets.xcassets */,
 				DB449BC8267516A40014F328 /* Preview Content */,
+				DB449BD0267516B60014F328 /* AsynAwaitTest.swift */,
+				DB16937C267BCBE0009A3565 /* ExtensionAVFoundation.swift */,
+				DB16937E267BCC87009A3565 /* music.mp3 */,
 			);
 			path = AsyncAwait;
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB16937F267BCC87009A3565 /* music.mp3 in Resources */,
 				DB449BCA267516A40014F328 /* Preview Assets.xcassets in Resources */,
 				DB449BC7267516A40014F328 /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB449BD1267516B60014F328 /* AsynAwaitTest.swift in Sources */,
+				DB16937D267BCBE0009A3565 /* ExtensionAVFoundation.swift in Sources */,
 				DB449BC5267516A20014F328 /* ContentView.swift in Sources */,
 				DB449BC3267516A20014F328 /* AsyncAwaitApp.swift in Sources */,
 			);
@@ -269,14 +283,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AsyncAwait/Preview Content\"";
+				DEVELOPMENT_TEAM = 794XU74V2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsyncAwait/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = AsyncAwait;
+				INFOPLIST_KEY_CFBundleName = AsyncAwait;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,14 +317,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AsyncAwait/Preview Content\"";
+				DEVELOPMENT_TEAM = 794XU74V2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsyncAwait/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = AsyncAwait;
+				INFOPLIST_KEY_CFBundleName = AsyncAwait;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
